@@ -1,0 +1,4 @@
+dist/
+node_modules/
+awesome-akash/
+scripts/copy-awesome-akash.js

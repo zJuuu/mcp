@@ -1,0 +1,3 @@
+[submodule "awesome-akash"]
+	path = awesome-akash
+	url = https://github.com/akash-network/awesome-akash.git

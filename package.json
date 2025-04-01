@@ -1,0 +1,44 @@
+{
+  "name": "akash-mcp",
+  "version": "1.0.0",
+  "description": "Akash MCP Server",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node scripts/copy-awesome-akash.js",
+    "dev": "tsc && node scripts/copy-awesome-akash.js && npx @modelcontextprotocol/inspector node dist/index.js",
+    "dev:watch": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\""
+  },
+  "author": "Overclock Labs, Inc.",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@akashnetwork/akash-api": "^1.4.0",
+    "@akashnetwork/akashjs": "^0.11.0",
+    "@cosmjs/proto-signing": "^0.32.4",
+    "@cosmjs/stargate": "^0.32.4",
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.14",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0"
+  }
+}
